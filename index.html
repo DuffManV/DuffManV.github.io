@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+          integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+
+
+<header class="header">
+    <div class="header__body">
+        <nav class="header__nav">
+            <div class="nav__row nav__row-top">
+                <div class="nav__col nav__social">
+                    social
+                </div>
+                <div class="nav__col nav__address">
+                    ул. Такая-то д.Какой то город Какой то
+                </div>
+            </div>
+            <div class="nav__row">
+                <div class="nav__col nav__logo">
+                    LOGO
+                </div>
+                <div class="header__burger"><span></span></div>
+                <div class="nav__col nav__navigation">
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#places">Отдых</a></li>
+                        <li><a href="#tours">Путёвки</a></li>
+                        <li><a href="#blog">Блог</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="offer">
+            <span class="offer__phone"><a href="tel:+79999999999">+8 999 999 99 99</a></span>
+            <h1 class="offer__title">Закажите билет и Сразу же в ПУТЬ!</h1>
+            <p class="offer__text">Travel is the movement of people between relatively distant geographical locations,
+                and can involve
+                travel by foot,bicycle, automobile, train, boat, bus.</p>
+            <button class="offer__button modal__href" data-name="ticket">Заказать</button>
+        </div>
+
+    </div>
+
+    <div class="modal__window modal__window-ticket"><span>&times;</span>
+        <div class="form-wrapper">
+            <form class="ticket-modal__form" action="/">
+                <div class="trip" hidden>
+                    <label for="trip-name">Название тура</label>
+                    <input type="text" class="trip-name" id="trip-name" value="">
+                </div>
+                <h3>Оставьте ваш номер телефона и адресс электронной почты для консультации</h3>
+
+                <label for="email">Электронный адресс</label>
+                <input type="email" id="email" required>
+                <label for="tel">
+                    Номер телефона
+                </label>
+                <input type="tel" id="tel" required>
+
+                <button class="modal-button">Отправить</button>
+            </form>
+        </div>
+        <button type="submit"></button>
+    </div>
+</header>
+
+
+<div class="search">
+
+    <ul class="search__tabs">
+        <li class="search__tab search__tab-active ">Отели</li>
+        <li class="search__tab">Туры</li>
+        <li class="search__tab">Экскурсии</li>
+    </ul>
+
+    <div class="search__forms">
+        <div class="search__form search__hotel search__form-active">
+            <div class="wrap">
+                <form class="hotel-form form" action="/">
+                    <div class="hotel-form__item">
+                        <label for="where-hotel">Место пребывания</label>
+                        <input type="search" id="where-hotel" placeholder="Город">
+                    </div>
+                    <div class="hotel-form__item">
+                        <label for="when-hotel">Дата заселения</label>
+                        <input type="text" id="when-hotel" placeholder="Дата" onfocus="(this.type='date')">
+                    </div>
+                    <div class="hotel-form__item">
+                        <label for="howLong-hotel">Длительность пребывания</label>
+                        <input type="number" id="howLong-hotel" placeholder="Сколько дней">
+                    </div>
+                    <button type="submit" class="search__button button-vertical">Поиск</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="search__form search__tour">
+            <div class="wrap">
+                <form class="hotel-form form" action="/">
+                    <div class="hotel-form__item">
+                        <label for="where-tour">Название тура</label>
+                        <input type="search" id="where-tour" placeholder="Тур">
+                    </div>
+                    <div class="hotel-form__item">
+                        <label for="when-tour">Желаемая дата поездки</label>
+                        <input type="text" id="when-tour" placeholder="Дата" onfocus="(this.type='date')">
+                    </div>
+                    <div class="hotel-form__item">
+                        <label for="howLong-tour">Длительность поездки</label>
+                        <input type="number" id="howLong-tour" placeholder="Сколько дней">
+                    </div>
+                    <button type="submit" class="search__button button-vertical">Поиск</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="search__form search__package">
+            Package
+        </div>
+
+    </div>
+</div>
+
+
+<div class="places" id="places">
+    <span>Популярные туристические путёвки</span>
+    <h1 class="places__title">Популярные места</h1>
+    <div class="places__slider">
+        <div class="places__slide">
+            <div class="places__price">
+                <div class="price__text">000&#x20bd; 0 дней 0 ночей</div>
+                <div class="price__name">Ласточкино гнездо, Ялта</div>
+            </div>
+            <img src="img/nest.jpg" alt="">
+        </div>
+        <div class="places__slide">
+            <div class="places__price">
+                <div class="price__text">000&#x20bd; 0 дней 0 ночей</div>
+                <div class="price__name">Воскресенская церковь, Форос</div>
+            </div>
+            <img src="img/foros.jpg" alt=""></div>
+        <div class="places__slide">
+            <div class="places__price">
+                <div class="price__text">000&#x20bd; 0 дней 0 ночей</div>
+                <div class="price__name">Генуэзская крепость, Судак</div>
+            </div>
+            <img src="img/sudak.jpg" alt="">
+        </div>
+        <div class="places__slide"></div>
+        <div class="places__slide"></div>
+        <div class="places__slide"></div>
+        <div class="places__slide"></div>
+        <div class="places__slide"></div>
+        <div class="places__slide"></div>
+    </div>
+</div>
+
+
+<div class="popular">
+
+    <div class="popular__bg">
+        <img src="img/popular_bg1.png" alt="">
+        <div class="popular__title">Самые Популярные Направления</div>
+    </div>
+
+    <div class="popular__text">Любите путешествовать? Ничего лучше Крыма с его пейзажами и пляжами нет! Планируйте Ваш
+        отдых с нами!
+    </div>
+
+
+    <div class="popular__slider">
+        <div class="popular__slide">
+            <img src="img/beach-crimea.jpg" alt="">
+            <div class="popular__description">Switzerland</div>
+        </div>
+
+        <div class="popular__slide">
+            <img src="img/view1.jpg" alt="">
+            <div class="popular__description">Some</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="honeymoon">
+
+    <div class="modal__window modal__window-bachchisaray">
+        <span>&times;</span>
+        <div class="full-desc">
+            <h1>Фонтан слёз(Бахчисарай)</h1>
+            Фонтан слез, которым восторгался Пушкин в знаменитом произведении «Бахчисарайский фонтан», расположен в
+            ханском дворце в Бахчисарае. Любопытен тот факт, что достопримечательность намного больше будоражит умы
+            туристов, чем дворец — место былого счастья хана.
+            Он был создан по велению своенравного хана Крым-Гирея в честь любви к отравленной его женой наложнице
+            Диляры-Бикеч. Каменный фонтан символизирует великую скорбь хана. По центру фонтана вырублена каменная роза,
+            которая олицетворяет собой вечную жизнь.
+
+        </div>
+    </div>
+
+    <div class="modal__window  modal__window-sevastopol">
+        <span>&times;</span>
+        <div class="full-desc">
+            <h1>Мостик влюблйнных(Севастополь)</h1>
+            Это пешеходный мостик, расположенный на Приморском бульваре рядом с набережной Корнилова. Этот мостик ещё
+            называется гербовым мостиком или мостиком влюблённых. Это сооружение знаменито благодаря барельефу, который
+            рассказывает об обороне города в 1854 - 1855 гг. геральдическим языком.
+            Наверное, практически в каждом городе есть место, которое традиционно местными жителями и отдыхающими
+            считается местом встречи влюблённых. Это может быть, например, сквер, лестница, лавочка, а в Севастополе –
+            это мостик. Впрочем, наименований у него много. Официальное его название – пешеходный мостик на Приморском
+            бульваре, однако среди жителей он более известен как гербовый мостик, мостик с драконами, мостик поцелуев,
+            мостик влюблённых.
+        </div>
+    </div>
+
+    <div class="modal__window modal__window-feodosiya">
+        <span>&times;</span>
+        <div class="full-desc">
+            <h1>Фонтан флюблённых(Феодосия)</h1>
+            Фонтан в центре Музейной площади в Феодосии появился в мае 2017 г., его украсила скульптурная композиция
+            "Влюбленная пара".
+            Фонтан изображает влюбленную пару под зонтом. В темное время суток фонтан подсвечивают восемь фонарей.
+            Скульптура высотой около трёх метров, композиция дополнена струями воды и подсветкой снизу.
+            Именно вода, бьющая из фонтана и стекающая струями с зонта, создаёт ту магию, которая делает пару влюблённых
+            живыми. Как будто увидевшись и встретившись глазами они замерли, и весь мир для них на мгновение
+            остановился. Они не замечают ни ливня, ни людей вокруг фонтана, ни фотовспышек камер туристов. А для нас,
+            смотрящих на них, влюблённые замерли на века.
+            Рядом с фонтаном, в самом начале улицы Земская, которая в этом месте пешеходная, стоит знак : МЕСТО ДЛЯ
+            ПОЦЕЛУЕВ.
+        </div>
+    </div>
+
+    <div class="honeymoon__tittle">
+        <h2>Отдых для молодожёнов</h2>
+        Любите путешествовать? Отдых в Крыму предоставит вам незабываемые ощущения и воспоминания в этот прекрасный
+        момент жизни.
+    </div>
+
+
+    <div class="honeymoon__slider">
+
+        <div class="honeymoon__slide">
+            <div class="honeymoon__img"><img src="img/han-palace.jpg" alt=""></div>
+            <div class="honeymoon__desc">
+                <h1>Бахчисарай</h1>
+                <span class="price">000 &#x20bd;</span><br/>
+                <span class="duration">0 дня 0 ночи</span>
+                <p class="text">Здесь краткое описание</p>
+                <a href="#modal" class="modal__href" data-name="bachchisaray">Узнать больше</a>
+            </div>
+        </div>
+
+        <div class="honeymoon__slide">
+            <div class="honeymoon__img"><img src="img/Feodosiya.jpg" alt=""></div>
+            <div class="honeymoon__desc">
+                <h1>Феодосия</h1>
+                <span class="price">000 &#x20bd;</span><br/>
+                <span class="duration">0 дня 0 ночи</span>
+                <p class="text">Здесь краткое описание</p>
+                <a href="#modal" class="modal__href" data-name="feodosiya">Узнать больше</a>
+            </div>
+        </div>
+
+        <div class="honeymoon__slide">
+            <div class="honeymoon__img"><img src="img/Sevastopol.jpg" alt=""></div>
+            <div class="honeymoon__desc">
+                <h1>Севастополь</h1>
+                <span class="price">000 &#x20bd;</span><br/>
+                <span class="duration">0 дня 0 ночи</span>
+                <p class="text">Здесь краткое описание </p>
+                <a href="#modal" class="modal__href" data-name="sevastopol">Узнать больше</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="discount" id="tours">
+
+    <div class="modal__window modal__window-discount">
+        <span>&times;</span>
+        <div class="full-desc">
+            <h1>Скидки на туры</h1>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem doloremque dolorum eius in laudantium minus,
+            nam repellat tempora vero vitae, voluptate voluptatum? Amet doloremque harum numquam omnis, optio provident
+            saepe.
+        </div>
+    </div>
+
+    <div class="discount__wrapper">
+        <div class="discount__item discount__text">
+            <p class="discount__offer"><span>30<sup>%</sup></span> скидка на комплексные путёвки</p>
+            <p class="discount__title">Лучшие предложения</p>
+            <p class="discount__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at beatae
+                corporis nostrum possimus qui tenetur vel. Accusantium at beatae ex, illo, neque possimus quaerat quasi
+                reprehenderit sequi voluptatem voluptatibus?</p>
+            <button class="discount__more modal__href" data-name="discount">Узнать больше</button>
+        </div>
+        <div class="discount__item  discount__slider">
+            <div class="discount__image"><img src="img/crimea_dawn.jpg" alt=""></div>
+            <div class="discount__image"><img src="img/discount_img.png" alt=""></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="limited">
+    <div class="limited__wrapper">
+        <div class="limited__ticket">
+            <h1>30% скидка, количество ограничено</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci cum, dignissimos dolore
+                ducimus error eveniet ex exercitationem expedita illum impedit maiores maxime nisi porro praesentium,
+                sapiente vero vitae, voluptate?</p>
+            <button class="limited__get modal__href" data-name="ticket">Купить билет</button>
+        </div>
+        <div class="modal__window modal__window-baydar">
+            <span>&times;</span>
+            <div class="full-desc">
+                <h1>Байдарская долина</h1>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam, autem consequuntur cumque est
+                et harum nam neque nesciunt nisi optio porro, praesentium rem repellat, reprehenderit tempora totam
+                ullam voluptatem.
+            </div>
+        </div>
+
+        <div class="modal__window modal__window-fables">
+            <span>&times;</span>
+            <div class="full-desc">
+                <h1>Поляна сказок</h1>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam, autem consequuntur cumque est
+                et harum nam neque nesciunt nisi optio porro, praesentium rem repellat, reprehenderit tempora totam
+                ullam voluptatem.
+            </div>
+        </div>
+        <div class="limited__slider">
+
+            <div class="limited__slide">
+                <div class="limited__img"><img src="img/baydar.jpg" alt=""></div>
+                <div class="limited__desc">
+                    <a href="#modal" data-name="baydar" class="limited__fulldesc modal__href"><h1>Байдарская долина</h1>
+                    </a>
+                    <p>1 день</p>
+                    <p>Описание </p>
+
+                    <p class="limited__price">000&#x20bd;</p>
+                    <button class="limited__button modal__href button-vertical" data-name="ticket"
+                            data-trip="Байдарская долина">
+                        Заказать поездку
+                    </button>
+                </div>
+            </div>
+            <div class="limited__slide">
+                <div class="limited__img"><img src="img/fabels.jpg" alt=""></div>
+                <div class="limited__desc">
+                    <a href="#modal" data-name="fables" class="limited__fulldesc modal__href"><h1>Поляна сказок</h1>
+                    </a>
+                    <p>1 день</p>
+                    <p>Описание </p>
+
+                    <p class="limited__price">000&#x20bd;</p>
+                    <button class="limited__button modal__href button-vertical" data-name="ticket"
+                            data-trip="Поляна сказок">
+                        Заказать поездку
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="subscribe">
+    <div class="subscribe__body">
+        <h1>Узнай о горячих турах первым!</h1><br/>
+        <p>Подпишись на нашу новостную рассылку</p>
+        <input type="email" class="subscribe__email" placeholder="Введите ваш E-mail"><!--
+     -->
+        <button class="subscribe__submit"></button>
+    </div>
+</div>
+
+
+<div class="blog" id="blog">
+    <div class="blog__post">
+        <div class="blog__image">
+            <img src="img/blog1.png" alt="">
+            <span>posted by admin</span>
+        </div>
+        <div class="blog__text">
+            <h3>Съездить в горы с друзьми - НЕЗАБЫВАЕМО!</h3>
+            <p>Travel is the movement of people between relatively distant geographical locations, and can involve
+                travel by foot.</p>
+        </div>
+        <div class="blog__comment"></div>
+        <div class="blog__like"></div>
+        <div class="blog__share"></div>
+    </div>
+
+    <div class="blog__post">
+        <div class="blog__image">
+            <img src="img/blog2.jpg" alt="">
+            <span>posted by admin</span>
+        </div>
+        <div class="blog__text">
+            <h3>Почему так важно путешествовать и отдыхать?</h3>
+            <p>Travel is the movement of people between relatively distant geographical locations, and can involve
+                travel by foot.</p>
+        </div>
+        <div class="blog__comment"></div>
+        <div class="blog__like"></div>
+        <div class="blog__share"></div>
+    </div>
+
+    <div class="blog__post">
+        <div class="blog__image">
+            <img src="img/blog3.png" alt="">
+            <span>posted by admin</span>
+        </div>
+        <div class="blog__text">
+            <h3>Путешствовать - это как читать хорошую книгу.</h3>
+            <p>Travel is the movement of people between relatively distant geographical locations, and can involve
+                travel by foot.</p>
+        </div>
+        <div class="blog__comment"></div>
+        <div class="blog__like"></div>
+        <div class="blog__share"></div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="footer__body">
+        <div class="footer__content"><p>Название фирмы</p>
+            <p>Телефон: <a href="tel:+7999999999">+799 999 99 99</a></p>
+            <p>Skype : Skype</p>
+            <p>Email: email@email.com</p></div>
+        <div class="footer__content">
+            <h3>Поддержка</h3>
+            <hr>
+            <a href="">Написать нам</a>
+            <a href="">Чат с менеджером</a>
+        </div>
+        <div class="footer__content">
+            <h3>Меню</h3>
+            <hr>
+            <a href="">Главная</a>
+            <a href="">Отдых</a>
+            <a href="">Путёвки</a>
+            <a href="">Блог</a>
+            <a href="">Контакты</a>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-3.5.0.min.js" defer></script>
+<script src="js/slick.js" defer></script>
+<script src="js/script.js" defer></script>
+</body>
+</html>
