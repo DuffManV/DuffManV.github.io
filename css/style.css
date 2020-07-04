@@ -168,6 +168,7 @@ body {
     border: 1px solid #FFC001;
     border-radius: 50%;
     background-color: white;
+    z-index: 4;
 }
 
 .modal__window > span:hover {
@@ -491,7 +492,7 @@ body {
 }
 
 .honeymoon__img img {
-    min-width: 370px;
+    min-width: 450px;
     max-height: 300px;
     object-fit: cover;
     object-position: center;
@@ -551,6 +552,7 @@ body {
 }
 
 .discount__wrapper {
+    height: 100%;
     display: flex;
     width: 60%;
     position: absolute;
@@ -563,6 +565,7 @@ body {
     flex: 0 0 50%;
 }
 .discount__slider{
+    padding-top: 5%;
     overflow: hidden;
 }
 
@@ -938,8 +941,13 @@ body {
     display: flex;
     z-index: 10;
 }
+.hide{
+    display: none;
+}
 
-
+.fixed{
+    overflow: hidden;
+}
 
 
 
