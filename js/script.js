@@ -118,3 +118,8 @@ $(function () {
     $('.modal__href').modalWindow();
 
 });
+$("a[href^='#']").click(function () {
+    let _href = $(this).attr("href");
+    $("html, body").animate({scrollTop: $(_href).offset().top+"px"}, 1000);
+    return false;
+});

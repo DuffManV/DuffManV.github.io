@@ -12,7 +12,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: Prata;
+    font-family: Prata, sans-serif ;
     font-size: 18px;
 }
 a, a:focus{
@@ -109,7 +109,7 @@ body {
 .offer__title {
     padding: 20px 0 20px 0;
     font-size: 44px;
-    font-family: OpenSans;
+    font-family: OpenSans, sans-serif;
     text-shadow: 0 1px 1px black;
 
 }
@@ -322,6 +322,7 @@ body {
 }
 
 .places {
+
     width: 80%;
     margin: 150px auto;
 }
@@ -549,6 +550,7 @@ body {
     background-image:linear-gradient(to top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9) ), url("../img/discount_bg.png");
     background-size: cover;
     background-position: center;
+
 }
 
 .discount__wrapper {
@@ -817,6 +819,7 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+
 }
 
 .blog__post {
@@ -885,6 +888,7 @@ body {
     background-color: #1B2739;
     height: 100%;
     width: 100%;
+
 }
 
 .footer__body {
