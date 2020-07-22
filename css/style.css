@@ -19,6 +19,7 @@ a, a:focus{
     outline: none;
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 
 button, button:focus, button:hover {
@@ -176,7 +177,7 @@ body {
 }
 
 .ticket-modal__form {
-
+    padding: 40px 0 40px 0;
     justify-content: center;
     align-self: center;
 }
