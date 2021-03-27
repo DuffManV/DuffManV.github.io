@@ -25,6 +25,7 @@
 
     .places {
         width: 100%;
+        text-align: center;
     }
 
     .places__slider .slick-list .slick-slide {
@@ -252,13 +253,13 @@
         width: 90%;
     }
     .full-desc{
-        height: 75vh;
+        height: 65vh;
         overflow: auto;
     }
 
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     .discount__wrapper {
         width: 90%;
     }
